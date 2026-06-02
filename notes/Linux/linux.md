@@ -11,8 +11,9 @@ crontab
 ssh, scp
 ```
 
-| cd | change dir: chuyển thư mục |
+| Lệnh | Ý nghĩa |
 | --- | --- |
+| cd | change dir: chuyển thư mục |
 | ls | liệt kê |
 | cat | hiển thị nội dung |
 | less | hiển thị nội dung theo màn hình, có thể cuộn lên cuộn xuống |
@@ -27,18 +28,11 @@ ssh, scp
 | kill | kết thúc tiến trình |
 | systemctl | truy vấn, gửi lệnh điều khiển tới quản lý hệ thống |
 | journalctl | truy vấn log |
-| ss (netstat) | công cụ tương tự netstat |
-| Các trường trong ss: |  |
-| • Netid: loại giao thức mạng (tcp/udp) |  |
-| • State: trạng thái hiện tại |  |
-
-```
-  ◦ UNCONN: không kết nối
-  ◦ LISTEN: mở cổng và chờ kết nối
-  ◦ ESTAB: thiết lập kết nối thành công
-```
-
-• Recv-Q: Hàng đợi nhận ◦ Đối với LISTEN: số lượng kết nối đang chờ accept ◦ Đối với ESTAB: số lượng byte ứng dụng chưa kịp đọc ra từ mạng • Send-Q: Hàng đợi gửi ◦ Đối với LISTEN: kích thước tối đa của hàng đợi kết nối ◦ Đối với ESTAB: số lượng byte dữ liệu đã gửi đi nhưng chưa nhận được gói ACK • Local Address:Port: Địa chỉ IP và cổng máy cục bộ • Peer Address:Port: Địa chỉ IP và cổng máy đối tác • Process: Thông tin về tiến trình sử dụng socket | | lsof | Liệt kê tất cả mọi thứ được coi là file | | crontab | Lên lịch thực hiện tác vụ | | ssh | Giao thức thiết lập kênh an toàn | | scp | Sao chép tệp tin từ xa |
+| ss (netstat) | công cụ tương tự netstat<br>**Các trường trong ss:**<br>• Netid: loại giao thức mạng (tcp/udp)<br>• State: trạng thái hiện tại<br>&nbsp;&nbsp;◦ UNCONN: không kết nối<br>&nbsp;&nbsp;◦ LISTEN: mở cổng và chờ kết nối<br>&nbsp;&nbsp;◦ ESTAB: thiết lập kết nối thành công<br>• Recv-Q: Hàng đợi nhận<br>&nbsp;&nbsp;◦ Đối với LISTEN: số lượng kết nối đang chờ accept<br>&nbsp;&nbsp;◦ Đối với ESTAB: số lượng byte ứng dụng chưa kịp đọc ra từ mạng<br>• Send-Q: Hàng đợi gửi<br>&nbsp;&nbsp;◦ Đối với LISTEN: kích thước tối đa của hàng đợi kết nối<br>&nbsp;&nbsp;◦ Đối với ESTAB: số lượng byte dữ liệu đã gửi đi nhưng chưa nhận được gói ACK<br>• Local Address:Port: Địa chỉ IP và cổng máy cục bộ<br>• Peer Address:Port: Địa chỉ IP và cổng máy đối tác<br>• Process: Thông tin về tiến trình sử dụng socket |
+| lsof | Liệt kê tất cả mọi thứ được coi là file |
+| crontab | Lên lịch thực hiện tác vụ |
+| ssh | Giao thức thiết lập kênh an toàn |
+| scp | Sao chép tệp tin từ xa |
 
 # Bài thực hành
 
